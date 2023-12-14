@@ -16,7 +16,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg);
     color: white;
-    /* min-height: 2000px; */
+    min-height: 2000px;
 }
 
 /* Navbar */
@@ -87,7 +87,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url('../img/chaisiri-tiewsirichaisakul-lcfnd10lc44-unsplash.webp');
+    background-image: url('../img/hero-bg.webp');
     background-repeat: no-repeat;
     position: relative;
 }
@@ -136,6 +136,50 @@ body {
     background-color: var(--primary);
     border-radius: 0.5rem;
     box-shadow: 1px 1px 3px rgba(1, 1, 1, 0.5);
+}
+
+/* About Section */
+.about {
+    padding: 8rem 7% 1.4rem;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+}
+
+.about h2 span {
+    color: var(--primary);
+}
+
+.about .row {
+    display: flex;
+}
+
+.about .row .about-img {
+    flex: 1 1 45rem;
+}
+
+.about .row .about-img img {
+    width: 100%;
+}
+
+.about .row .content {
+    flex:  1 1 35rem;
+    padding: 0 1rem;
+}
+
+.about .row .content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.about .row .content p {
+    margin-bottom: 0.8rem;
+    font-size: 1.4rem;
+    font-weight: 200;
+    line-height: 1.6;
 }
 
 /* Media Kueri */
@@ -189,6 +233,29 @@ body {
 
     .hero {
         background-position: center;
+    }
+
+    .about .row {
+        flex-wrap: wrap;
+    }
+
+    .about .row .about-img img {
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .about .row .content {
+        padding: 0;
+    }
+
+    .about .row .content h3 {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+
+    .about .row .content p {
+        font-size: 1.6rem;
     }
 }
 
